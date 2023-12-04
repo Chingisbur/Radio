@@ -38,6 +38,16 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void nextStation22() {
+        Radio radio = new Radio(30);
+
+        radio.setCurrentStation(15);
+
+        int expected = 15;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
 
     @Test
     public void nextStation1() {
